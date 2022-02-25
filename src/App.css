@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Serif Display', serif;
+}
+body {
+	background-image: url(https://images.unsplash.com/photo-1628257228852-a285d25296a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	overflow: hidden;
+}
+.wrapper {
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper h1 {
+	margin-top: 40px;
+	font-weight: 700;
+	text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper .main {
+	display: flex;
+	margin-top: 20px;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.wrapper .form-container {
+	width: 500px;
+	height: 450px;
+	background-color: #ebe9e9;
+  box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+	margin: 20px auto;
+	padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper .form-container .btn {
+	width: 100%;
+}
+.wrapper .form-container label{
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.wrapper .view-container {
+	width: 600px;
+	background-color: #ebe9e9;
+  box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+	margin: 20px auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.delete-btn {
+	color: red;
+	cursor: pointer;
+  
+}
+.edit-btn {
+	color: rgb(21, 71, 21);
+	cursor: pointer;
+	margin-left: 40%;
+  
+}
+
+
+tbody {
+	margin-top: 25px;
+}
+
+.btn-edit{
+	color:rgb(255, 255, 255);
+	background-color: rgb(21, 71, 21);
+	padding-left: 21%;
+	padding-right: 21%;
+	border-radius: 5px;
 }
